@@ -1,17 +1,17 @@
 ﻿body {
     font-family: 'Sedan', sans-serif !important;
     background-image: url("../img/Img_bckg.jpg"); /* Same background image */
-    background-size: cover !important; /* Cover the entire container */
-    background-position: center !important; /* Center the background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
     color: #fff !important; /* Set text color to white for better readability */
-    padding-top: 100px ; /* Add padding to the top to create space for the navbar */
-    height: 100vh !important; /* Set height to 100% of the viewport height */
-    margin: 0 !important; /* Remove default margin */
-    padding: 0 !important; /* Remove default padding */
-    display: flex !important; /* Use flexbox */
+    padding-top: 100px; /* Add padding to the top to create space for the navbar */
+    height: 100vh; /* Set height to 100% of the viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox */
     justify-content: center !important; /* Center horizontally */
     align-items: center !important; /* Center vertically */
-    position: relative !important; /* Add position relative for pseudo-element */
+    position: relative; /* Add position relative for pseudo-element */
 }
 
     /* Overlay to make the background image blur */
@@ -53,7 +53,7 @@
 }
 
 h1 {
-    font-size: 3.5rem !important;
+    font-size: 3.5rem ;
 }
 
 .lead {
