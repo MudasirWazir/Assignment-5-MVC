@@ -1,0 +1,117 @@
+﻿@{
+    ViewData["Title"] = "About Us";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Shopper Zone</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Shopper Zone</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Data">Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="analytics">Analytics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Customer_Story">Our Customer Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About_us">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-wrapper mt-5">
+        <!-- About Us Section -->
+        <section class="about-us py-5 mt-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Our Team</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="text-center mb-4">
+                            <img src="~/img/Sanchit_Chaudhary_img.jpg" class="rounded-circle" alt="Person 1" height="150" width="150">
+                        </div>
+                        <h4 class="text-center">Sanchit Chaudhary</h4>
+                        <p class="text-center">
+                            A graduate student in BAIS program at USF with previous experience as a Data Engineer Lead with Bank of America.
+                            He contributed to creating the HTML and JS page for Analytics, Customer Story and About Us, working with dummy data and also populated tables with JS code and helped in organizing the code structure.
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="text-center mb-4">
+                            <img src="~/img/Saksham_Darolia_img.jpg" class="rounded-circle" alt="Person 2" height="150" width="150">
+                        </div>
+                        <h4 class="text-center">Saksham Darolia</h4>
+                        <p class="text-center">A Grad Student, pursuing MS in BAIS at USF with corporate expereince in SDE and Data Engineering. Contributed by developing the Analytics and Customer Story page, linked all the pages, standardized CSS and JS, improved overall website feel and responsiveness, fixed file structure and several bug fixes.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="text-center mb-4">
+                            <img src="~/img/mudasir.jpeg" class="rounded-circle" alt="Person 3" height="150" width="150">
+                        </div>
+                        <h4 class="text-center">Mudasir Wazir</h4>
+                        <p class="text-center">
+                            A graduate student in Business Analytics and Information Systems at USF with previous experience as a Technical Product Manager.
+                            Contributed in forming the data model, refining Homepage using HTML and master-detail relationship, support with chart elements using JS library.
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="text-center mb-4">
+                            <img src="~/img/DeepaBiswas_img.jpg" class="rounded-circle" alt="Person 4" height="150" width="150">
+                        </div>
+                        <h4 class="text-center">Deepa Biswas</h4>
+                        <p class="text-center">
+                            A graduate student in Business Analytics and Information Systems at USF, Deepa has 3 years of experience as a Software Engineer in CGI Inc and Cognizant .
+                            She contributed in designing the Data page using HTML,CSS and JS to display various tables and making CRUD Operations within the table.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Model Section -->
+        <section class="data-model py-5">
+            <h2 class="text-center mb-4">Data Model</h2>
+            <!-- Data Model Content -->
+            <img src="~/img/ERD Final Model.png" alt="Data Model" class="img-fluid">
+        </section>
+
+    </div>
+
+    <div class="footer">
+        Shopper Zone © 2024. All rights reserved.
+        <br>
+        <a href="https://github.com/Sanchitsolo/Assignment_LookAndFeel" target="_blank">Visit our GitHub</a>
+    </div>
+
+    <!-- Bootstrap JS Bundle (Bootstrap JS + Popper JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
